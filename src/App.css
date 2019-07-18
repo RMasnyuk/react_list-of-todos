@@ -1,33 +1,52 @@
-.App {
-  text-align: center;
+body {
+    background-image: url("\images\bg.jpg");
+    font-family: "Comic Sans MS", sans-serif;
+    padding: 10px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+table {
+    border-collapse: collapse;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+td {
+    border: 1px solid darkslategrey;
+    padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+tr:first-child {
+    font: bold italic 18px "MV Boli";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+    background-color: #f3f3f3;
+    outline: 0;
+    background-image: linear-gradient(top, #f3f3f3 0%, #dddddd 50%, #d2d2d2 50%, #dfdfdf 100%);
+    border-bottom: 1px solid #b4b4b4;
+    border-right: 1px solid #dfdfdf;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 0 white, 0 1px 0 0 #d5d5d5, 0 -1px 2px 1px #efefef;
+    color: #666;
+    font: bold 16px/1 "helvetica neue", helvetica, arial, sans-serif;
+    padding: 7px 0;
+    text-shadow: 0 1px 1px #fff;
+    width: 150px;
+}
+
+.completed {
+    background: rgba(155, 253, 155, 0.28);
+}
+
+.notcompleted {
+    background: rgba(255, 102, 102, 0.28);
+}
+
+tr {
+    background: rgba(228, 233, 237, 0.28);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
